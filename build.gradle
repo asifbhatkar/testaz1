@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.6.3'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
+//	id "com.microsoft.azure.azurewebapp" version "1.1.0"
 }
 
 group = 'com.testaz1'
@@ -23,3 +24,22 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+//task wrapper (type: Wrapper)	{
+//
+//	gradleVersion '7.4'
+//
+//}
+//azurewebapp {
+//	subscription = 'b54acde2-eb6d-488b-8439-066dbd54def8'
+//	resourceGroup = 'testaz1'
+//	appName = 'testaz11'
+//	pricingTier = 'P1v2'
+//	region = 'eastus'
+//	runtime {
+//		os = 'Windows'
+//		webContainer = 'Tomcat 9.0'
+//		javaVersion = 'Java 11'
+//	}
+//}
+
